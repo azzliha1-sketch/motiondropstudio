@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MotionDrop Studio - Programmatic motion design</title>
+<meta name="description" content="MotionDrop Studio is an independent motion design studio based in France, building code-generated animations, ad creatives and streaming assets.">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --bg:#0b0b12; --card:#151522; --text:#ecebf5; --muted:#a3a2b8; --accent:#7c5cff; --accent2:#21d4fd; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  a { color:var(--accent2); }
+  header { display:flex; align-items:center; gap:14px; max-width:1040px; margin:0 auto; padding:24px; }
+  header img { width:48px; height:48px; border-radius:12px; }
+  header strong { font-size:1.2rem; letter-spacing:.3px; }
+  nav { margin-left:auto; display:flex; gap:20px; }
+  nav a { color:var(--muted); text-decoration:none; }
+  .hero { max-width:1040px; margin:0 auto; padding:40px 24px 24px; }
+  h1 { font-size:clamp(2rem,4.5vw,3.2rem); line-height:1.15; margin:0 0 16px; }
+  h1 span { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .lead { color:var(--muted); font-size:1.15rem; max-width:720px; }
+  .btn { display:inline-block; margin-top:20px; padding:12px 22px; border-radius:10px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
+  section { max-width:1040px; margin:0 auto; padding:32px 24px; }
+  h2 { font-size:1.6rem; margin:0 0 18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+  .card { background:var(--card); border-radius:14px; padding:20px; }
+  .card h3 { margin:0 0 8px; }
+  .card p { margin:0; color:var(--muted); }
+  .gallery img { width:100%; border-radius:12px; display:block; }
+  ol li { margin-bottom:8px; color:var(--muted); }
+  ol li strong { color:var(--text); }
+  footer { max-width:1040px; margin:0 auto; padding:32px 24px 48px; color:var(--muted); font-size:.95rem; border-top:1px solid #23233a; }
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="MotionDrop Studio logo">
+  <strong>MotionDrop Studio</strong>
+  <nav><a href="#work">Work</a><a href="#how">How we build</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+  <h1>Programmatic <span>motion design</span>, built with code and AI.</h1>
+  <p class="lead">MotionDrop Studio is an independent motion design studio founded in France in 2026. We produce short animated ads, UI and product animations, and ready-to-use streaming assets, generated from reusable code templates and refined with AI assistance and human review.</p>
+  <a class="btn" href="mailto:contact@motiondropstudio.dpdns.org">contact@motiondropstudio.dpdns.org</a>
+</div>
+
+<section id="work">
+  <h2>What we make</h2>
+  <div class="grid">
+    <div class="card"><h3>Short motion ads</h3><p>10 to 30 second vertical and square ads for apps, products and SaaS, delivered as MP4, GIF or Lottie.</p></div>
+    <div class="card"><h3>Streaming asset packs</h3><p>Animated alerts, scenes, overlays and transitions for Twitch, YouTube and TikTok Live, with transparent WebM and green-screen versions.</p></div>
+    <div class="card"><h3>Animated UI and icons</h3><p>Lightweight call-to-action stickers, UI micro-animations and icon loops for websites and social media.</p></div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Recent work</h2>
+  <div class="grid">
+    <img src="hero.jpg" alt="Neon Stream Kit, animated streaming overlay pack">
+    <img src="alerts.jpg" alt="Neon stream alerts, ten animated alerts">
+    <img src="vertical.jpg" alt="Vertical scenes for TikTok Live">
+  </div>
+  <p style="color:var(--muted)">Our first products are available on our <a href="https://www.etsy.com/listing/4590409741">Etsy shop</a>. Custom projects are offered on <a href="https://www.upwork.com/freelancers/~019623aaaa5ef05206">Upwork</a> and <a href="https://contra.com/azz_liha_5gof3a8h">Contra</a>.</p>
+</section>
+
+<section id="how">
+  <h2>How we build</h2>
+  <ol>
+    <li><strong>Brief to storyboard.</strong> An AI assistant turns a client brief into a shot list, timing and copy variants.</li>
+    <li><strong>Code-generated animation.</strong> Scenes are written as reusable canvas and JavaScript templates, so one design can be rendered in many sizes, languages and colorways.</li>
+    <li><strong>Automated rendering and checks.</strong> A pipeline exports MP4, transparent WebM, GIF and Lottie, then checks duration, resolution and file size before delivery.</li>
+    <li><strong>Human review.</strong> Every deliverable is reviewed by the founder before it is published or sent to a client.</li>
+  </ol>
+  <p style="color:var(--muted)">Next: a self-serve tool that lets small businesses generate on-brand motion ads from a short brief, built on the Claude API.</p>
+</section>
+
+<footer id="contact">
+  <p><strong>MotionDrop Studio</strong> - founded by Azzedine Ahil, Paris area, France.</p>
+  <p>Contact: <a href="mailto:contact@motiondropstudio.dpdns.org">contact@motiondropstudio.dpdns.org</a></p>
+  <p>&copy; 2026 MotionDrop Studio</p>
+</footer>
+</body>
+</html>
